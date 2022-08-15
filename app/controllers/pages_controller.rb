@@ -14,7 +14,6 @@ class PagesController < ApplicationController
     #     member.start_with?(search)
     #   end
     # end
-
     if search
       @members = @members.select { |member| member.start_with?(search) }
     end
