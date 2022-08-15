@@ -1,0 +1,17 @@
+<h1>Contact Us</h1>
+
+<form action="/contact" method="get">
+  <input type="text" name="member" placeholder="Who are you looking for?" >
+  <input type="submit">
+</form>
+
+
+<ol>
+  <% @members.each do |member| %>
+    <li>
+      <%= member %>
+    </li>
+<% end %>
+</ol>
+
+<%= link_to "click me to go to about page", about_path %>
